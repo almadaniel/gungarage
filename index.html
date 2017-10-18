@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <title>Gun Garage</title>
+	<link rel="icon" href="images/1.jpg">
+    <link rel="icon" href="images/header.jpg">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <img src="images/header.jpg">
+  </div>
+<ul>
+  <li><img <a style="margin-top:20px;" src="images/1600.png" width="200" height="100"></a></li>
+  <li><a style="margin-left: 100px;" class="active" href="index.html">Home</a></li>
+  <li><a style="margin-left: 50px;" href="product.html">Product</a></li>
+  <li><a style="margin-left: 50px;" href="aboutus.html">About Us</a></li>
+</ul>
+
+
+  <div class="center"<a style="margin-left:250px; margin-top:30px;">
+  <div class="container">
+          
+  <img class="mySlides" src="images/1.jpg" style="width:800px; height:400px;">
+  <img class="mySlides"src="images/2.jpg" style="width:800px; height:400px;">
+  <img class="mySlides" src="images/3.jpg" style="width:800px; height:400px;">
+  
+  <br>
+  <button  onclick="plusDivs(-1)">&#10094;</button>
+   <a style="margin-left:750px;"> </a> 
+  
+<button  onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+</div>
+
+<br><br><br><br><br>
+<div class="center">
+         <div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="images/1.jpg" alt="nadcon" width="200" height="200">
+	             <img src="images/1.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<p>M4A1-Scope</p>
+                </div>
+        </div>
+
+         <div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="images/barret.jpg" alt="nadcon" width="200" height="200">
+	             <img src="images/barret.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<p>Barrett M82A1</p>
+                </div>
+        </div>
+		<div class="productrow">
+                <div class="product1">
+                    <a target="_blank" href="images/ak.jpg" alt="nadcon" width="200" height="200">
+	             <img src="images/ak.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<p>AK Black </p>
+                </div>
+        </div>
+		<div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="images/p90.jpg" alt="nadcon" width="200" height="200">
+	             <img src="images/p90.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<p>FN P90</p>
+                </div>
+        </div>
+		<div class="productrow">
+                <div class="product1">
+                    <a target="_blank" href="images/uzi.jpg" alt="nadcon" width="200" height="200">
+	             <img src="images/uzi.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<p>UZI</p>
+                </div>
+        </div>
+	</div>
+	<marquee direction=right behavior=alternate>
+   <font color="red" <p>Developer: Almae Mae Almoceda/Daniel Magno</p></font>
+  </marquee> 
+  
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+</body>
+</html>
+
